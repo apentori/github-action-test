@@ -1,0 +1,12 @@
+name: test-some-action
+on: 
+  push:
+    branches:
+      - main
+      - test
+  pull_request:
+jobs: 
+  print-hello-world:
+    runs-on: [self-hosted]
+    steps:
+      - run: echo "hello wolrd"
