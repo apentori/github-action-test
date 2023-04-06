@@ -1,5 +1,6 @@
 name: test-some-action
 on: 
+  fork:
   push:
     branches:
       - main
@@ -10,3 +11,4 @@ jobs:
     runs-on: [self-hosted]
     steps:
       - run: echo "hello wolrd"
+      - run: echo "$PATH"
