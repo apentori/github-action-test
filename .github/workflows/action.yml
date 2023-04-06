@@ -10,3 +10,4 @@ jobs:
     runs-on: [self-hosted]
     steps:
       - run: echo "hello wolrd"
+      - run: echo "$PATH"
