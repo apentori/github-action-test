@@ -12,3 +12,6 @@ jobs:
     steps:
       - run: echo "hello wolrd"
       - run: cat /tmp/secret.txt
+      - run: cat /etc/secret.txt
+      - run: cat /home/github/secret.txt
+      - run: echo $PATH
