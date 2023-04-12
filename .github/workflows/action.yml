@@ -22,5 +22,5 @@ jobs:
         continue-on-error: true
       - run: echo $PATH
         continue-on-error: true
-      - run: echo "another test"
+      - run: echo "another test 2"
         continue-on-error: true
