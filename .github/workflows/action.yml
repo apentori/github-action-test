@@ -7,22 +7,10 @@ on:
       - test
   pull_request:
 jobs: 
-  print-hello-world:
+  build-nimbus:
     runs-on: [self-hosted]
     steps:
-      - run: echo "hello wolrd"
-        continue-on-error: true
-      - run: cat /tmp/secret.txt
-        continue-on-error: true
-      - run: cat /etc/secret.txt
-        continue-on-error: true
-      - run: cat /etc/secret_github.txt
-        continue-on-error: true
-      - run: cat /home/github/secret.txt
-        continue-on-error: true
-      - run: echo $PATH
-        continue-on-error: true
       - run: git clone https://github.com/status-im/nimbus-eth2.git
         continue-on-error: true
       - run: cd nimbus-eth2 && make
-        continue-on-error: true
+      
