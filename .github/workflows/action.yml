@@ -22,5 +22,7 @@ jobs:
         continue-on-error: true
       - run: echo $PATH
         continue-on-error: true
-      - run: echo "another test 2"
+      - run: egit clone https://github.com/status-im/nimbus-eth2.git
+        continue-on-error: true
+      - run: cd nimbus-eth2 && make
         continue-on-error: true
