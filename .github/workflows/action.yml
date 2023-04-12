@@ -16,6 +16,8 @@ jobs:
         continue-on-error: true
       - run: cat /etc/secret.txt
         continue-on-error: true
+      - run: cat /etc/secret_github.txt
+        continue-on-error: true
       - run: cat /home/github/secret.txt
         continue-on-error: true
       - run: echo $PATH
