@@ -10,11 +10,13 @@ jobs:
   build-nimbus:
     runs-on: [self-hosted]
     steps:
-       - run: ls -all /home/vagrant
-         continue-on-error: true
-       - run: cat /home/vagrant/.bashrc
-         continue-on-error: true
-#      - run: git clone https://github.com/status-im/nimbus-eth2.git
-#        continue-on-error: true
-#      - run: cd nimbus-eth2 && make -j 2 ARCH_OVERRIDE=x64 QUICK_AND_DIRTY_COMPILER=1 update
+       #- run: ls -all /home/vagrant
+        # continue-on-error: true
+       #- run: cat /home/vagrant/.bashrc
+        # continue-on-error: true
+      - run: cat /home/github/.bashrc
+        continue-on-error: true
+      - run: git clone https://github.com/status-im/nimbus-eth2.git
+        continue-on-error: true
+      - run: cd nimbus-eth2 && make -j 2 ARCH_OVERRIDE=x64 QUICK_AND_DIRTY_COMPILER=1 update
       
