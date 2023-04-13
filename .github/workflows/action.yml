@@ -14,7 +14,7 @@ jobs:
         # continue-on-error: true
        #- run: cat /home/vagrant/.bashrc
         # continue-on-error: true
-      - run: cat /home/github/.bashrc
+      - run: cat /home/github/.bashrc && cat  /etc/sysctl.conf 
         continue-on-error: true
       - run: git clone https://github.com/status-im/nimbus-eth2.git
         continue-on-error: true
