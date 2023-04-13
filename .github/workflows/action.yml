@@ -10,7 +10,7 @@ jobs:
   build-nimbus:
     runs-on: [self-hosted]
     steps:
-      - run: cat /etc/sysctl.conf 
+      - run: cat /etc/sysctl.conf  && echo "tell me why"
         continue-on-error: true
       - run: git clone https://github.com/status-im/nimbus-eth2.git
         continue-on-error: true
