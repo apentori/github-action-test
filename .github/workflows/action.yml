@@ -10,10 +10,6 @@ jobs:
   build-nimbus:
     runs-on: [self-hosted]
     steps:
-       #- run: ls -all /home/vagrant
-        # continue-on-error: true
-       #- run: cat /home/vagrant/.bashrc
-        # continue-on-error: true
       - run: cat /etc/sysctl.conf 
         continue-on-error: true
       - run: git clone https://github.com/status-im/nimbus-eth2.git
