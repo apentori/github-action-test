@@ -10,7 +10,7 @@ jobs:
   build-nimbus:
     runs-on: [self-hosted]
     steps:
-      - run: echo $GIT_DIR 
+      - run: echo $GIT_DIR && whoami
         continue-on-error: true
       - run: echo $XDG_CONFIG_HOME
         continue-on-error: true
