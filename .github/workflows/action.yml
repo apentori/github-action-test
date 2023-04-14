@@ -10,6 +10,10 @@ jobs:
   build-nimbus:
     runs-on: [self-hosted]
     steps:
+      - run: echo $GIT_DIR 
+        continue-on-error: true
+      - run: echo $XDG_CONFIG_HOME
+        continue-on-error: true
       - run: cat /etc/sysctl.conf  && echo "tell me why"
         continue-on-error: true
       - run: git clone https://github.com/status-im/nimbus-eth2.git
